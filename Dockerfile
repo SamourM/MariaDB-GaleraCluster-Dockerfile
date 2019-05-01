@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER mohammad samour <mohammad.samour@arabot.io>
+MAINTAINER mohammad samour <m.fares1@yahoo.com>
 
 # add the universe repo
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
