@@ -1,5 +1,5 @@
 # MariaDB-GaleraCluster-Dockerfile
 
-docker build -t dockerfile .
+docker build -t imagename .
 
 #repeat for all nodes and change the IPs.
