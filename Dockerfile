@@ -15,7 +15,7 @@ RUN apt install rsync
 # update apt again
 RUN apt-get -q -y update
 RUN apt install mariadb-server mariadb-client
-ADD ./cluster.cnf /etc/mysql/conf.d/cluster.cnf
+COPY cluster.cnf /etc/mysql/conf.d/cluster.cnf
 # startup the service - this will fail since the nodes haven't been configured on first boot
 RUN service mysql restart
 # open the ports required to connect to MySQL and for Galera SST / IST operations
